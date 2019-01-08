@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleArt.CLI", "ModuleArt.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{EF765283-084B-4F9D-80A5-E15D846F8533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleArt.Modules.ExampleModule", "ModuleArt.Modules.ExampleModule\ModuleArt.Modules.ExampleModule.csproj", "{56ECF2A5-2A7A-499C-96FB-0E5498BE17D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleArt.Module.ExampleModule", "ModuleArt.Module.ExampleModule\ModuleArt.Module.ExampleModule.csproj", "{56ECF2A5-2A7A-499C-96FB-0E5498BE17D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleArt.Common", "ModuleArt.Common\ModuleArt.Common.csproj", "{C0BD7120-47FE-4BC8-A56C-68A7F7D63476}"
 EndProject

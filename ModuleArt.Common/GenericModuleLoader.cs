@@ -22,6 +22,11 @@ namespace ModuleArt.Common
             foreach (string moduleFile in Directory.GetFiles(path, searchPattern, searchOption))
             {
                 Assembly assembly = Assembly.LoadFile(moduleFile);
+                foreach (AssemblyName assemblyName in assembly.GetReferencedAssemblies())
+                {
+                    Console.WriteLine($"{assemblyName.Name}");
+                }
+                //Console.WriteLine($"{assembly.FullName.Replace(", Version=", "_v").Split(',')[0]}");
                 assemblies.Add(assembly);
             }
 
@@ -41,12 +46,15 @@ namespace ModuleArt.Common
 
                     foreach (Type type in types)
                     {
+                        //Console.Write($"{type.FullName}: ");
                         if (type.IsInterface || type.IsAbstract || type.GetCustomAttribute(typeof(ModuleAttribute)) == null)
                         {
+                            //Console.WriteLine("Rejected");
                             continue;
                         }
                         if (type.GetInterface(moduleType.FullName) != null)
                         {
+                            //Console.WriteLine("Accepted");
                             moduleTypes.Add(type);
                         }
                     }

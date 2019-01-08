@@ -45,6 +45,8 @@
     <Compile Include="GenericModuleLoader.cs" />
     <Compile Include="IModule.cs" />
     <Compile Include="IModuleContext.cs" />
+    <Compile Include="ModuleDomain.cs" />
+    <Compile Include="ModuleManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
